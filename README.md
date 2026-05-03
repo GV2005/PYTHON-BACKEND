@@ -16,6 +16,34 @@ Covered:
 
 Status: Completed ✅
 
+## Day 2 - Modules & Packages
+
+Covered:
+
+* import module
+* from module import function
+* alias import (`as`)
+* custom modules
+* multiple modules
+* packages
+* `__init__.py`
+* package-level exports
+* `json`
+* `datetime`
+* `uuid`
+* `os`
+
+Built:
+
+* `helpers/math_utils.py`
+* `helpers/string_utils.py`
+* `helpers/validator.py`
+* `helpers/data_utils.py`
+* `main.py` integrating all modules
+
+Status: Completed ✅
+
+
 ## Projects Built
 
 ### Ecommerce API Testing Project (Postman)
