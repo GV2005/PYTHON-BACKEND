@@ -1,0 +1,243 @@
+{
+  "info": {
+    "_postman_id": "555034d3-2f40-4239-99a3-6a9537bd8408",
+    "name": "ECOMMERCE APP",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "54470716",
+    "_collection_link": "https://go.postman.co/collection/54470716-555034d3-2f40-4239-99a3-6a9537bd8408?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "LOGIN API",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "let jsondata = pm.response.json();\r",
+              "pm.environment.set(\"token\", jsondata.accessToken);"
+            ],
+            "type": "text/javascript",
+            "packages": {},
+            "requests": {}
+          }
+        }
+      ],
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"username\": \"emilys\", \"password\": \"emilyspass\"}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{base_url}}/auth/login",
+          "host": [
+            "{{base_url}}"
+          ],
+          "path": [
+            "auth",
+            "login"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "USER PROFILE",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "{{token}}",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url}}/auth/me",
+          "host": [
+            "{{base_url}}"
+          ],
+          "path": [
+            "auth",
+            "me"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "PRODUCT",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "\r",
+              "console.log(\"extracted all products and stored in collection variable\")\r",
+              "\r",
+              "let jsonData=pm.response.json();\r",
+              "pm.collectionVariables.set(\"total_products\",jsonData.total);\r",
+              "\r",
+              "pm.environment.set(\"products1\",jsonData.products[0].id);\r",
+              "\r",
+              "\r",
+              "console.log(\"And the first product is stored in environment variable\")"
+            ],
+            "type": "text/javascript",
+            "packages": {},
+            "requests": {}
+          }
+        }
+      ],
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url}}/products",
+          "host": [
+            "{{base_url}}"
+          ],
+          "path": [
+            "products"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "add2cart",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "let jsonData=pm.response.json();\r",
+              "pm.environment.set(\"cart_id\",jsonData.id);\r",
+              "\r",
+              "pm.test(\"Status code is 200\", function () {\r",
+              "    pm.response.to.have.status(201);\r",
+              "});\r",
+              "\r",
+              ""
+            ],
+            "type": "text/javascript",
+            "packages": {},
+            "requests": {}
+          }
+        }
+      ],
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"userId\": 1,\r\n    \"products\": [\r\n        {\r\n        \"id\": {{products1}},\r\n        \"quantity\": 4\r\n        }\r\n    ]\r\n}\r\n",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{base_url}}/carts/add",
+          "host": [
+            "{{base_url}}"
+          ],
+          "path": [
+            "carts",
+            "add"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "cart details",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "",
+              "",
+              "pm.test('Cart is not empty - products array has items', function () {",
+              "    const jsonData = pm.response.json();",
+              "    pm.expect(jsonData.products).to.be.an('array');",
+              "    pm.expect(jsonData.products.length).to.be.greaterThan(0);",
+              "});",
+              "",
+              "pm.test('Cart totalProducts is greater than 0', function () {",
+              "    const jsonData = pm.response.json();",
+              "    pm.expect(jsonData.totalProducts).to.be.greaterThan(0);",
+              "});"
+            ],
+            "type": "text/javascript",
+            "packages": {},
+            "requests": {}
+          }
+        }
+      ],
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url}}/carts/4",
+          "host": [
+            "{{base_url}}"
+          ],
+          "path": [
+            "carts",
+            "4"
+          ]
+        }
+      },
+      "response": []
+    }
+  ],
+  "event": [
+    {
+      "listen": "prerequest",
+      "script": {
+        "type": "text/javascript",
+        "packages": {},
+        "requests": {},
+        "exec": [
+          ""
+        ]
+      }
+    },
+    {
+      "listen": "test",
+      "script": {
+        "type": "text/javascript",
+        "packages": {},
+        "requests": {},
+        "exec": [
+          ""
+        ]
+      }
+    }
+  ],
+  "variable": [
+    {
+      "key": "total_products",
+      "value": ""
+    }
+  ]
+}
