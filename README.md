@@ -1,4 +1,4 @@
-# Python Backend 30 Day Lock-In
+# Python Backend learning process
 
 ## Day 1 - Advanced Functions
 Covered:
@@ -15,3 +15,30 @@ Covered:
 - Decorators
 
 Status: Completed ✅
+
+## Projects Built
+
+### Ecommerce API Testing Project (Postman)
+
+**Folder:** `postman/ecommerce-api-testing/`
+
+Covered:
+
+* Postman GUI tour
+* Workspace & Collections
+* First API request
+* GET / POST / PUT / PATCH / DELETE
+* Headers
+* Query Parameters
+* Request Body
+* Login API
+* Token / Authorization
+* Real-world API testing
+
+---
+
+## Upcoming
+
+* PostgreSQL
+* FastAPI
+* Healthcare backend capstone
