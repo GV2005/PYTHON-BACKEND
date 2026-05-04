@@ -43,6 +43,29 @@ Built:
 
 Status: Completed ✅
 
+## Day 3 - Practical OOP
+
+Covered:
+
+* Class & Object
+* Attributes
+* Constructor (`__init__`)
+* Methods
+* Inheritance
+* Method Overriding
+* Encapsulation
+* Class Variables
+* `__str__()`
+
+Built:
+
+* Patient class
+* Doctor class
+* Appointment class
+* Main integration file
+
+Status: Completed ✅
+
 
 ## Projects Built
 
