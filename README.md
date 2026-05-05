@@ -66,6 +66,29 @@ Built:
 
 Status: Completed ✅
 
+## Day 4 - Exceptions + Validation
+
+Covered:
+
+* try / except
+* Specific exceptions
+* `as e`
+* else
+* finally
+* raise
+* Custom exceptions
+* Validation functions
+* assert
+
+Built:
+
+* Custom exception classes
+* Validators module
+* User registration validation system
+
+Status: Completed ✅
+
+
 
 ## Projects Built
 
