@@ -88,6 +88,30 @@ Built:
 
 Status: Completed ✅
 
+## Day 5 - File Handling + JSON
+
+Covered:
+
+* File read (`r`)
+* File write (`w`)
+* File append (`a`)
+* `with open(...)`
+* JSON save (`json.dump`)
+* JSON load (`json.load`)
+* File exception handling (`FileNotFoundError`)
+* JSON empty file handling (`JSONDecodeError`)
+* List of dictionaries in JSON
+
+Built:
+
+* Read / write / append practice files
+* JSON profile save & load
+* Safe file handler
+* Local User Database System (`UserManager` with add / view / find user)
+
+Status: Completed ✅
+
+
 
 
 ## Projects Built
