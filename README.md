@@ -111,6 +111,72 @@ Built:
 
 Status: Completed ✅
 
+## Day 6 - Type Hints, venv & Clean Project Structure
+
+Covered:
+
+* Function type hints (`a: int -> int`)
+* Variable type hints
+* Collection type hints (`list[str]`, `dict[str, str]`)
+* Optional types (`Optional[str]`)
+* Virtual Environment (`venv`)
+* pip package management
+* `requirements.txt`
+* Clean package/project structure
+* Running package modules (`python -m app.main`)
+
+Built:
+
+* Type hint practice files
+* Virtual environment setup
+* Requirements file generation
+* Structured mini app:
+
+  * `models/User`
+  * `validators/user_validator.py`
+  * `services/user_service.py`
+  * `utils/helpers.py`
+  * `main.py`
+
+Key Learnings:
+
+* Difference between module import vs function import
+* Avoid file name = function name confusion
+* Proper class naming (`User`, not `Users` for single object)
+* Professional root-level execution for package projects
+
+Status: Completed ✅
+
+
+## FastAPI Learning Progress
+
+### Completed Topics
+
+* FastAPI Introduction
+* Running FastAPI with Uvicorn
+* Swagger Docs (`/docs`)
+* ReDoc (`/redoc`)
+* Path Parameters
+* Query Parameters
+* Request Body with Pydantic Models
+* Data Validation
+* Form Data Handling
+* File Uploads (`UploadFile`)
+
+### Concepts Practiced
+
+* GET Requests
+* POST Requests
+* Dynamic Routes
+* Query Filtering
+* Request Parsing
+* Automatic Validation
+* File Handling in APIs
+
+### Status
+
+FastAPI Fundamentals Completed ✅
+(First 6 sections / 12 lectures from Udemy course)
 
 
 
