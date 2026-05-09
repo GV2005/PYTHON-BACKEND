@@ -147,6 +147,40 @@ Key Learnings:
 
 Status: Completed ✅
 
+## Day 7 - SQL Basics
+
+Covered:
+
+* Databases, Tables, Rows, Columns
+* SQL syntax fundamentals
+* CREATE TABLE
+* INSERT INTO
+* SELECT queries
+* WHERE filtering
+* ORDER BY sorting
+* LIMIT results
+* UPDATE rows
+* DELETE rows
+* ALTER TABLE (rename table)
+* Auto Increment Primary Key behavior
+
+Built:
+
+* SQLite practice database (`backend_learning.db`)
+* Students table
+* Teachers table
+* Multiple CRUD operations using SQL
+
+Key Learnings:
+
+* Difference between SQL language and database software
+* Primary keys should not be manually edited
+* Deleted IDs are not usually reused (Auto Increment behavior)
+* SQL CRUD operations are core backend building blocks
+
+Status: Completed ✅
+
+
 
 ## FastAPI Learning Progress
 
@@ -177,6 +211,48 @@ Status: Completed ✅
 
 FastAPI Fundamentals Completed ✅
 (First 6 sections / 12 lectures from Udemy course)
+
+### FastAPI Update - Advanced Concepts
+
+#### Completed Topics
+
+* Dependency Injection fundamentals
+* Function-level dependencies
+* Class-level dependencies
+* Global dependencies
+* Sub-dependencies (nested dependencies)
+* Yield-based dependencies (setup / cleanup pattern)
+* Session handling
+* Rate limiting
+
+#### Concepts Practiced
+
+* Reusable dependency functions
+* Shared authentication / validation logic
+* Request lifecycle management using `yield`
+* Dependency chaining
+* Managing session-based request state
+* Understanding request limits / throttling mechanisms
+* Cleaner route architecture with modular reusable components
+
+#### Key Understanding
+
+* Reduced repeated code across routes
+* Improved API structure using dependency injection
+* Learned practical session handling patterns
+* Understood API protection using rate limiting
+* Better understanding of production backend design concepts
+
+#### Hands-on
+
+* Implemented code examples for all dependency injection levels
+* Practiced session management workflows
+* Built rate-limit protected API examples
+
+#### Status
+
+FastAPI Advanced Concepts — Completed ✅
+
 
 
 
