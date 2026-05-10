@@ -180,6 +180,55 @@ Key Learnings:
 
 Status: Completed ✅
 
+## Day 8 - SQL CRUD & Query Mastery
+
+### Topics Covered
+
+* Advanced WHERE filtering
+* AND / OR / NOT operators
+* IN operator
+* BETWEEN operator
+* LIKE pattern matching
+* Alias using AS
+* Multiple conditions in a single WHERE clause
+* ORDER BY with LIMIT
+* Safe UPDATE operations
+* Safe DELETE operations
+* Difference between DELETE and DROP TABLE
+
+### Hands-on Work
+
+Created:
+
+* `company.db`
+* `employees` table
+* `queries.sql`
+
+Practiced:
+
+* Multi-condition filtering
+* Pattern-based search queries
+* Salary range filtering
+* City-based filtering
+* Updating records dynamically
+* Deleting records safely
+* Writing independent SQL challenge queries
+
+### Mini Challenge Completed
+
+Queries solved independently:
+
+* Highest salary employee
+* Employees not in Chennai
+* Employees whose name contains `"r"`
+
+### Key Learning
+
+Moved from remembering SQL syntax → writing SQL queries independently.
+
+Status: Completed ✅
+
+
 
 
 ## FastAPI Learning Progress
@@ -252,6 +301,34 @@ FastAPI Fundamentals Completed ✅
 #### Status
 
 FastAPI Advanced Concepts — Completed ✅
+
+### FastAPI Update - Database & Authentication
+
+#### Completed Topics
+
+* SQLite integration using `sqlite3`
+* Database CRUD operations in FastAPI
+* JWT Authentication
+* Token generation and validation
+* Protected routes using authentication dependencies
+* Authentication workflow implementation
+
+#### Concepts Practiced
+
+* Connecting FastAPI routes with database layer
+* Executing SQL queries through Python
+* User authentication with JWT tokens
+* Securing endpoints
+* Token-based request authorization
+* End-to-end API flow (request → validation → auth → DB → response)
+
+#### Certification
+
+Completed **FastAPI Full Course – Python Framework | Beginner to Advanced** (Udemy) ✅ 
+
+#### Status
+
+FastAPI Backend Fundamentals + Authentication — Completed ✅
 
 
 
