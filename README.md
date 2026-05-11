@@ -228,6 +228,52 @@ Moved from remembering SQL syntax → writing SQL queries independently.
 
 Status: Completed ✅
 
+## Day 9 - GROUP BY, HAVING & Aggregate Functions
+
+### Topics Covered
+
+* Aggregate functions:
+
+  * SUM()
+  * AVG()
+  * MAX()
+  * MIN()
+  * COUNT()
+* GROUP BY
+* HAVING
+* Grouped analytics queries
+* ORDER BY with grouped results
+* SQL query execution flow
+
+### Hands-on Work
+
+Created:
+
+* `analytics.db`
+* `sales` table
+* `queries.sql`
+
+Practiced:
+
+* Department-wise total sales
+* City-wise average sales
+* Employee count per department
+* Filtering grouped data using HAVING
+* Finding highest grouped totals
+* Aggregated reporting queries
+
+### Key Learnings
+
+* WHERE filters rows before grouping
+* HAVING filters groups after grouping
+* GROUP BY creates analytical summaries
+* Aggregate functions simplify analytics operations
+* SQL query execution order matters
+
+### Status
+
+Completed ✅
+
 
 
 
