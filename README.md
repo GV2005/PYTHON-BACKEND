@@ -274,6 +274,47 @@ Practiced:
 
 Completed ✅
 
+## Day 10 - SQL Joins
+
+### Topics Covered
+
+* Relational database concepts
+* Table relationships using IDs
+* INNER JOIN
+* Multi-table queries
+* Filtering joined data
+* Aggregates with joins
+* GROUP BY on joined tables
+* HAVING with joins
+
+### Hands-on Work
+
+Created:
+
+* `joins.db`
+* `departments` table
+* `employees` table
+* `queries.sql`
+
+Practiced:
+
+* Connecting employee and department data
+* Fetching related data across tables
+* Department-wise salary analytics
+* Filtering joined records
+* Aggregate analysis on relational data
+
+### Key Learnings
+
+* Tables are connected using matching IDs
+* JOIN combines related table data
+* Relational databases reduce repeated information
+* Aggregates and grouping work across joined tables
+
+### Status
+
+Completed ✅
+
 
 
 
