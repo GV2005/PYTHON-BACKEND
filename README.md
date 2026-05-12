@@ -369,6 +369,48 @@ Built a small Python-based employee database workflow:
 
 Completed ✅
 
+## Day 12 - PostgreSQL Setup & Basics
+
+### Topics Covered
+
+* PostgreSQL installation
+* pgAdmin setup
+* PostgreSQL server connection
+* Creating databases in PostgreSQL
+* Creating tables using PostgreSQL
+* CRUD operations in PostgreSQL
+* JOIN queries in PostgreSQL
+* PostgreSQL vs SQLite syntax differences
+
+### Hands-on Work
+
+Created:
+
+* `company_db`
+* `employees` table
+* `departments` table
+
+Practiced:
+
+* INSERT operations
+* SELECT queries
+* UPDATE operations
+* DELETE operations
+* JOIN queries across tables
+* ORDER BY usage in PostgreSQL
+
+### Key Learnings
+
+* PostgreSQL is a database server, unlike SQLite file-based databases
+* PostgreSQL uses `SERIAL PRIMARY KEY` instead of `AUTOINCREMENT`
+* Row order is not guaranteed without `ORDER BY`
+* SQL concepts transfer across databases with minor syntax differences
+* pgAdmin acts as a GUI for managing PostgreSQL
+
+### Status
+
+Completed ✅
+
 
 
 ## FastAPI Learning Progress
