@@ -315,6 +315,59 @@ Practiced:
 
 Completed ✅
 
+## Day 11 - SQLite with Python
+
+### Topics Covered
+
+* SQLite integration using Python
+* Database connection using `sqlite3`
+* Executing SQL queries through Python
+* Fetching database records
+* Updating records using Python
+* Deleting records using Python
+* Commit and connection handling
+* Python-driven database CRUD operations
+
+### Hands-on Work
+
+Created:
+
+* `company.db`
+* `main.py`
+
+Implemented:
+
+* Database connection
+* Table creation using Python
+* Inserting records into SQLite database
+* Fetching records using `fetchall()`
+* Filtering records with SQL conditions
+* Updating employee salaries
+* Deleting employee records
+* Verifying database updates through Python
+
+### Key Learnings
+
+* `sqlite3.connect()` creates or connects to existing database
+* `commit()` is required after INSERT / UPDATE / DELETE operations
+* `fetchall()` returns data as tuples
+* SQL queries can be executed directly from Python
+* Python can fully control database CRUD operations
+* Missing WHERE in UPDATE affects all rows
+
+### Mini Backend CRUD Practice
+
+Built a small Python-based employee database workflow:
+
+* Show employees
+* Add employee
+* Update salary
+* Delete employee
+* Display updated records
+
+### Status
+
+Completed ✅
 
 
 
