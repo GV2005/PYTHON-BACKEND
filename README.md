@@ -495,6 +495,47 @@ Implemented:
 
 Completed ✅
 
+## Day 15 - Database Schema Design
+
+### Topics Covered
+
+* Database schema design concepts
+* Entity and relationship modeling
+* One-to-One relationships
+* One-to-Many relationships
+* Many-to-Many relationships
+* Foreign key concepts
+* Normalization basics
+* Relational database architecture
+
+### Hands-on Understanding
+
+Designed conceptual schema structures for:
+
+* Hospital Management System
+* Patients and Doctors relationships
+* Department-based structures
+* Prescription and medicine relationships
+
+### Key Learnings
+
+* Schema design focuses on organizing data efficiently
+* Tables should reduce duplicate/redundant data
+* Relationships connect entities logically
+* Foreign keys maintain relational integrity
+* One-to-Many relationships are very common in backend systems
+* Good schema design improves scalability and maintainability
+
+### Relationship Types Learned
+
+* One-to-One (1:1)
+* One-to-Many (1:M)
+* Many-to-Many (M:M)
+
+### Status
+
+Completed ✅
+
 
 
 ## FastAPI Learning Progress
