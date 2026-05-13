@@ -411,6 +411,90 @@ Practiced:
 
 Completed ✅
 
+## Day 13 - Python with PostgreSQL
+
+### Topics Covered
+
+* PostgreSQL integration with Python
+* `psycopg2` setup and usage
+* Connecting Python to PostgreSQL
+* PostgreSQL CRUD operations through Python
+* Executing SQL queries using Python
+* Fetching PostgreSQL records in Python
+
+### Hands-on Work
+
+Created:
+
+* `main.py`
+
+Implemented:
+
+* PostgreSQL database connection using `psycopg2`
+* Table creation using Python
+* INSERT operations
+* SELECT queries
+* UPDATE operations
+* DELETE operations
+* Fetching and printing PostgreSQL records
+
+### Key Learnings
+
+* `psycopg2` is used for PostgreSQL integration in Python
+* PostgreSQL uses `SERIAL PRIMARY KEY`
+* PostgreSQL workflow is similar to SQLite with different drivers
+* Python can fully control PostgreSQL databases
+* Backend applications communicate with databases through drivers
+
+### Status
+
+Completed ✅
+
+## Day 14 - FastAPI with PostgreSQL
+
+### Topics Covered
+
+* FastAPI with PostgreSQL integration
+* Using `psycopg2` inside FastAPI
+* Building CRUD APIs with PostgreSQL
+* Executing PostgreSQL queries through API endpoints
+* REST API development with FastAPI
+
+### Hands-on Work
+
+Created:
+
+* `main.py`
+
+Implemented:
+
+* PostgreSQL connection inside FastAPI
+* GET API to fetch employees
+* POST API to add employees
+* PATCH API to update employee salary
+* DELETE API to remove employees
+* Database commit handling
+* API response handling
+
+### Key Learnings
+
+* FastAPI can directly interact with PostgreSQL databases
+* PostgreSQL uses `%s` placeholders in `psycopg2`
+* REST APIs perform CRUD operations through database queries
+* PATCH is used for partial updates
+* Backend APIs connect frontend requests with databases
+
+### APIs Built
+
+* `GET /employees`
+* `POST /addemployee`
+* `PATCH /update_employee/{id}`
+* `DELETE /delete_employee/{id}`
+
+### Status
+
+Completed ✅
+
 
 
 ## FastAPI Learning Progress
