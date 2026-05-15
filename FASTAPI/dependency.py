@@ -3,60 +3,60 @@ from datetime import datetime
 
 app=FastAPI()
 
-# functional level :
+#functional level :
 
-# def db():
-#     return {"db is connected"}
+def db():
+    return {"db is connected"}
 
-# @app.get("/display")
+@app.get("/display")
 
-# def display(a:dict=Depends(db)):
-#     return {"message":"this is from endpoint that","db_status":a}
+def display(a:dict=Depends(db)):
+    return {"message":"this is from endpoint that","db_status":a}
 
 
 #class level :
 
-# class user:
-#     def __init__(self):
-#         self.name="coder"
-#         self.age=21
+class user:
+    def __init__(self):
+        self.name="coder"
+        self.age=21
 
-# def getuser():
-#     return user()
+def getuser():
+    return user()
 
-# @app.get("/user-data")
+@app.get("/user-data")
 
-# async def get_user(a:user=Depends(getuser)):
-#     return {"name":a.name,"age":a.age}
+async def get_user(a:user=Depends(getuser)):
+    return {"name":a.name,"age":a.age}
 
 #global level :
 
 
-# def ver_tok(tok:str="1234"):
-#     if tok !="1234":
-#         raise Exception("Invalid token")
-#     return True
+def ver_tok(tok:str="1234"):
+    if tok !="1234":
+        raise Exception("Invalid token")
+    return True
 
 
 
-# @app.get("/display")
+@app.get("/display")
 
-# async def dis():
-#     return {"message":"hello"}
+async def dis():
+    return {"message":"hello"}
 
 
-# sub dependency level:
+#sub dependency level:
 
-# def gp():
-#     return {"message":"from grand parent"}
+def gp():
+    return {"message":"from grand parent"}
 
-# def pa(a:str=Depends(gp)):
-#     return {f"message : from parents and {a}"}
+def pa(a:str=Depends(gp)):
+    return {f"message : from parents and {a}"}
 
-# @app.get("/display")
+@app.get("/display")
 
-# def child(b:str=Depends(pa)):
-#     return {"message":b}
+def child(b:str=Depends(pa)):
+    return {"message":b}
 
 #yeild level :
 

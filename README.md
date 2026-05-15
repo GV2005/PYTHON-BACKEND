@@ -637,6 +637,134 @@ Completed **FastAPI Full Course – Python Framework | Beginner to Advanced** (U
 
 FastAPI Backend Fundamentals + Authentication — Completed ✅
 
+## Day 18 — Response Models + Status Codes
+
+### Topics Covered
+
+* FastAPI `response_model`
+* Structured API responses
+* Response validation
+* List response models
+* HTTP status codes
+* Professional API response handling
+
+### Hands-on Work
+
+Implemented:
+
+* Response models using `BaseModel`
+* Controlled API output using `response_model`
+* List response handling
+* POST endpoint with `status_code=201`
+* Structured employee API responses
+
+### Key Learnings
+
+* `response_model` validates outgoing API responses
+* FastAPI enforces response structure consistency
+* APIs should return predictable structured data
+* `status_code` defines expected success responses
+* Response models help frontend integration and documentation
+
+### Status
+
+Completed ✅
+
+## Day 24 — Exception Handlers
+
+### Topics Covered
+
+* FastAPI `HTTPException`
+* Global exception handlers
+* Custom JSON error responses
+* Centralized error handling
+* Condition-based exception raising
+
+### Hands-on Work
+
+Implemented:
+
+* Custom exception handler using `@app.exception_handler()`
+* Global handling for `HTTPException`
+* Structured custom error responses using `JSONResponse`
+* Condition-based error handling for empty database query results
+
+### Key Learnings
+
+* Exception handlers centralize backend error management
+* `HTTPException` should be raised only when conditions fail
+* Global handlers intercept exceptions across endpoints
+* Error formatting can be separated from business logic
+* Backend systems use centralized exception architecture for cleaner code
+
+### Status
+
+Completed ✅
+
+## Day 25 — Testing Basics
+
+### Topics Covered
+
+* FastAPI `TestClient`
+* Automated API testing
+* `assert` statements
+* Status code testing
+* Response validation testing
+
+### Hands-on Work
+
+Implemented:
+
+* API testing using `TestClient`
+* Automated GET request testing
+* Status code verification
+* JSON response validation using `response.json()`
+* Assertion-based backend behavior testing
+
+### Key Learnings
+
+* Backend APIs can be tested programmatically
+* `assert` verifies expected API behavior automatically
+* Automated testing is different from manual Swagger/Postman testing
+* Testing helps prevent broken APIs and regressions
+* Response content and status codes should both be validated
+
+### Status
+
+Completed ✅
+
+## Day 26 — Project Architecture
+
+### Topics Covered
+
+* FastAPI project structuring
+* `APIRouter`
+* Modular backend architecture
+* Schema separation
+* Router integration
+* Backend organization patterns
+
+### Hands-on Work
+
+Implemented:
+
+* Modular FastAPI folder structure
+* Separate `routers/` and `schemas/` folders
+* `APIRouter` based endpoint handling
+* Schema imports inside routers
+* Centralized app assembly using `include_router()`
+
+### Key Learnings
+
+* `main.py` should assemble the backend application
+* Routers handle endpoint logic separately
+* Schemas define request/response structure
+* Backend architecture improves scalability and maintainability
+* Large backend systems require modular organization
+
+### Status
+
+Completed ✅
 
 
 

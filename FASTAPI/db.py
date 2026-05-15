@@ -9,13 +9,13 @@ cursor=conn.cursor()
 
 #  TABLE CREATION 
 
-# cursor.execute('''
-#     create table if not exists items(
-#         item_id integer primary key autoincrement,
-#         name text not null,
-#         desc text            
-#     )
-#     ''')
+cursor.execute('''
+    create table if not exists items(
+        item_id integer primary key autoincrement,
+        name text not null,
+        desc text            
+    )
+    ''')
 
 #   CREATE
 
