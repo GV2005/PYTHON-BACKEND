@@ -766,7 +766,109 @@ Implemented:
 
 Completed ✅
 
+## Day 27 — API Deployment
 
+### Topics Covered
+
+* FastAPI deployment
+* Render deployment workflow
+* Public API hosting
+* Cloud runtime configuration
+* Production deployment basics
+
+### Hands-on Work
+
+Implemented:
+
+* Public FastAPI deployment using Render
+* Cloud-hosted API access
+* Swagger docs deployment
+* Production startup configuration
+* GitHub-based deployment workflow
+
+### Key Learnings
+
+* Backend APIs can be publicly hosted on cloud platforms
+* Production deployment differs from local development
+* Cloud deployment requires runtime configuration
+* Public API documentation can be shared externally
+* Deployment is a core backend engineering skill
+
+### Status
+
+Completed ✅
+
+---
+
+## Day 28 — Healthcare Backend Capstone
+
+### Topics Covered
+
+* Production-style backend architecture
+* PostgreSQL relational schema design
+* Middleware implementation
+* Global exception handling
+* Cloud PostgreSQL integration
+* Production deployment debugging
+
+### Hands-on Work
+
+Built:
+
+* Healthcare Management Backend System
+
+Implemented:
+
+* Patients APIs
+* Doctors APIs
+* Illness APIs
+* Appointment APIs
+* PostgreSQL relational database integration
+* Middleware logging system
+* Global exception handling
+* Request & response validation
+* Cloud PostgreSQL database integration
+* Public backend deployment
+
+### Tech Stack Used
+
+* FastAPI
+* PostgreSQL
+* psycopg2
+* Pydantic
+* Uvicorn
+* Render
+
+### Live Deployment
+
+API:
+https://healthcare-backend-system-avwn.onrender.com
+
+Swagger Docs:
+https://healthcare-backend-system-avwn.onrender.com/docs
+
+### Key Learnings
+
+* Real backend systems require modular architecture
+* Cloud deployment differs from local development
+* Environment variables are important for production systems
+* PostgreSQL relational schema design is critical for scalable systems
+* Middleware and exception handling improve backend maintainability
+* Production debugging is part of backend engineering workflow
+
+### Status
+
+Completed ✅
+
+---
+
+## Upcoming
+
+* Resume + GitHub Polish
+* Mock Interview Preparation
+* Frontend ↔ Backend Integration
+* Docker Basics
+* Job Applications
 
 ## Projects Built
 
