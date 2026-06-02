@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Employee Details</h2>
+
+<button onclick="getEmployee()">
+    Get Employee
+</button>
+
+<p id="output"></p>
+
+<script>
+
+async function getEmployee() {
+
+    let response = await fetch(
+        "http://127.0.0.1:8000/employee"
+    );
+
+    let data = await response.json();
+
+    document.getElementById("output").innerText =
+        "Name: " + data.name +
+        " | Age: " + data.age +
+        " | Role: " + data.role +
+        " | city: "+ data.city;
+}
+
+</script>
+
+</body>
+</html>
