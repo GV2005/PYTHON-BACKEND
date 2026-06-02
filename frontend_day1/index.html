@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1>Hello giri</h1>
+        <p>I am learning the frontend backend integration</p>
+        <p id="output"></p>
+        <input type="text" id="username" placeholder="username">
+        <input type="number" id="age" placeholder="your age">
+        <button onclick="showDetails()">Click Me</button>
+        <button onclick="getUser()">Get User</button>
+
+        <script>
+        function showDetails(){
+            let name=document.getElementById("username").value
+            let age=document.getElementById("age").value
+            document.getElementById("output").innerText=
+                    "hello "+name + " and your age is "+age;
+
+            if (name===""){
+                alert("enter valid name");
+                return;
+            }
+        }
+        async function getUser() {
+            let response=await fetch("https://jsonplaceholder.typicode.com/users/1")
+            let data=await response.json();
+
+            document.getElementById("output").innerText=
+            "Name:" + data.name + "user: " + data.username;
+        }
+    </script>
+    </body>
+</html>

@@ -870,6 +870,65 @@ Completed ✅
 * Docker Basics
 * Job Applications
 
+
+## Frontend ↔ Backend Integration Mastery
+
+### Day 1 - Frontend & API Communication Fundamentals
+
+#### Topics Covered
+
+* HTML page structure
+* Headings, inputs, buttons, and paragraphs
+* JavaScript functions
+* Event handling using `onclick`
+* Variables using `let`
+* Reading user input with `getElementById().value`
+* Updating UI using `innerText`
+* Basic form validation using `if` and `return`
+
+#### API Integration Concepts
+
+* Introduction to `fetch()`
+* HTTP GET requests from JavaScript
+* Async functions using `async` and `await`
+* Processing API responses using `response.json()`
+* Accessing JSON fields using object notation
+* Dynamically displaying API data on the webpage
+
+#### Hands-on Practice
+
+Built a simple frontend application that:
+
+* Accepts user input
+* Displays dynamic content on the page
+* Validates form input before processing
+* Sends a request to a public API
+* Receives JSON data
+* Extracts response fields
+* Updates the UI with API data
+
+#### Key Learnings
+
+* Frontend JavaScript can communicate directly with APIs using `fetch()`
+* API responses are typically returned in JSON format
+* JSON responses become JavaScript objects after `response.json()`
+* Data can be accessed using properties such as `data.name` and `data.username`
+* UI can be updated dynamically without reloading the page
+
+#### Core Integration Flow Learned
+
+User Input
+→ JavaScript Function
+→ fetch() Request
+→ API Response
+→ JSON Processing
+→ UI Update
+
+#### Status
+
+Day 1 Frontend Integration Fundamentals - Completed ✅
+
+
 ## Projects Built
 
 ### Ecommerce API Testing Project (Postman)
